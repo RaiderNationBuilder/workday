@@ -1,3 +1,5 @@
+var currentDay = moment().format('dddd [,] MMM Do YY')
+
 $(".btn").on("click", function() {
 
     console.log($(this).attr('name'));
@@ -12,7 +14,9 @@ $(".btn").on("click", function() {
 })
 
 function displayLocalData() {
-
+    
+    $('#currentDay').text(currentDay);
+    console.log(currentDay);
     for (var key in localStorage){
         console.log('What hour we are checking out', key)
         console.log('message', localStorage[key])
@@ -32,7 +36,7 @@ function displayLocalData() {
         } else if (parseInt(key) ===  parseInt(moment().format('HH'))) {
             console.log('KEY WAS equal to THAN!!!!!!')
             $('#' + key).addClass('present')
-            
+
         } else {
             $('#' + key).addClass('past')
         }
@@ -41,12 +45,3 @@ function displayLocalData() {
 
 }
 displayLocalData();
-
-
-
-
-// [
-//     {time: 10, message: 'eat breakfast'},
-//     {time: 11, message: 'lunch'}
-// ]
-
