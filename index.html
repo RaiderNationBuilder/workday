@@ -18,6 +18,10 @@ THEN the saved events persist -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -44,54 +48,74 @@ THEN the saved events persist -->
     </header>
 
     <div class="container">
-      <div class="row">
-        <div class="hour">9 am</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+      <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">10 am</div>
+        <textarea id="10" class="col-8 col-lg-10"></textarea>
+        <button name='10' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">10 am</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">11 am</div>
+        <textarea id="11" class="col-8 col-lg-10"></textarea>
+        <button  name='11' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">11 am</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">12 pm</div>
+        <textarea id='12' class="col-8 col-lg-10"></textarea>
+        <button name='12' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">12 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">1 pm</div>
+        <textarea id='13' class="col-8 col-lg-10"></textarea>
+        <button  name='13'class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">1 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">2 pm</div>
+        <textarea id='14' class="col-8 col-lg-10"></textarea>
+        <button name='14' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">2 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">3 pm</div>
+        <textarea id='15' class="col-8 col-lg-10"></textarea>
+        <button name='15' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">3 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">4 pm</div>
+        <textarea id='16' class="col-8 col-lg-10"></textarea>
+        <button name='16' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">4 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
+
+      <div class="row time-block">
+        <div class="col-2 col-lg-1 hour">5 pm</div>
+        <textarea id='17' class="col-8 col-lg-10"></textarea>
+        <button name='17' class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="row">
-        <div class="hour">5 pm</div>
-        <div class="time-block textarea past">Event</div>
-        <button type="button" class="saveBtn">save</button>
-      </div>          
-    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
